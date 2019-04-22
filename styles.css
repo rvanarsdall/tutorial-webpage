@@ -1,0 +1,299 @@
+header {
+  background-image: url(img/header-photo.png);
+  height: 500px;
+
+  background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 100.5)), url(img/header-photo.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+.type-writer{
+  width:500px;
+  position: relative;
+  padding-left: 0;
+  padding-top:25px;
+  margin-top:15px;
+}
+.type-writer{
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 450px}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+pre {
+
+  white-space: pre;
+  overflow: auto;
+  padding: 10px !important;
+  clear: both;
+  margin: 10px 0 !important;
+  color: #4C6D75 !important;
+  background-color: #f5fffc !important;
+  border: 1px solid #3376A4 !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+  word-wrap: break-word;
+}
+
+code {
+  font-size: 1.3em;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 0;
+  color: white;
+  font-size: 5.5em;
+  margin-top: 0;
+  font-family: 'Carrois Gothic', sans-serif;
+  line-height: .8;
+}
+
+h4 {
+  font-family: 'Titan One', cursive;
+
+}
+
+h3 {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+
+#logo {
+
+  /*animation-delay: 2s;*/
+  animation: pulse 3s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+nav {
+  background: black;
+  color: white;
+  padding: 25px 15px;
+  margin: 0;
+  height: 40px;
+  width: 100%;
+  position: relative;
+
+
+
+}
+
+nav ul {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul li {
+
+  float: right;
+  margin-right: 50px;
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+a {
+  color: white;
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Carrois Gothic', sans-serif;
+  position: relative;
+}
+
+.row {
+
+  margin: 25px;
+}
+
+.column1 {
+
+
+  display: inline-block;
+  width: 45%;
+  margin: 0, 155px;
+  vertical-align: top;
+}
+
+
+.column2 {
+  display: inline-block;
+  width: 45%;
+  vertical-align: bottom;
+  padding-left:15px;
+  padding-right:15px;
+
+}
+sidebar{
+  text-align: center;
+  position: relative;
+}
+sidebar ul {
+
+  list-style-type: none;
+}
+
+footer {
+  height: 175px;
+  background: rgba(0, 0, 100.5);
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+.social-icon:hover{
+  color:yellow;
+}
+.flat-button {
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 100.5);
+  color: white;
+}
+
+.flat-button:hover {
+  background-color: rgb(112, 2, 139);
+}
+
+.flat-button:active {
+  color: #FFB2B2;
+}
+
+
+#brand {
+  float: left;
+
+}
+
+
+@media screen and (max-width: 980px) {
+  .column1 {
+    width: 75%;
+    padding: 35px
+  }
+
+  .column2 {
+    width: 100%;
+
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+
+  nav ul {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-right: 0px;
+    float: none;
+  }
+
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 640px) {
+
+
+
+  h1 {
+    font-size: 3em;
+  }
+
+  nav ul {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  header {
+    height: 200px;
+    background-size: 600px;
+    background-attachment: fixed;
+    background-repeat: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }

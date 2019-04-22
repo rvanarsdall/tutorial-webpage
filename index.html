@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorial Webpage - for 1150 Code Academy</title>
+    <!--REQUIREMENTS: 
+        A): Must have separate CSS and HTMl files connected through a <link> tag
+        B): <header>, <nav>, <section>, <a>, <footer>, <article>, <sidebar> 
+        C): Must make use of at least one CSS pseudo-class ( :hover for example)  
+        D): Must have body content informing the user about the topics listed below
+        E): Links in nav must be able to direct users to the matching topic sections
+        F): Must have at least 3 educational programming links on the site - these links should open in a new tab
+        G): Must make use of at least one AnimateCSS animation
+-->
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Sawarabi+Mincho|Titan+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Javascript Tuts</h1>
+        <h4 class="type-writer"><span style="color:yellow;">coding </span>made simple</h4>
+        <img id="logo" src="img/javascript.png" style="width:100px" alt="">
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li id="brand"><span><a href="#">Javascript Tuts</a></span></li>
+            <li><a href="#objects">Objects</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#arrays">Arrays</a></li>
+        </ul>
+    </nav>
+    <article id="about" class="row">
+        <div class="column1">
+            <h3>Lets Learn Some Coding</h3>
+            <p>This site was created to give you a thorough understanding on the basics of JavaScript. Did you know
+                Brendan Eich the architect of Javascript created it in 10 days. Obviously things have changed since the
+                early days - so stick with us and you'll be coding in no time. </p>
+            <p>We are going to start off with the following...</p>
+
+            <ul>
+                <li>Arrays</li>
+                <li>Function Scope</li>
+                <li>Objects</li>
+            </ul>
+
+
+        </div>
+        <div class="column2" style="vertical-align:top;">
+
+            <sidebar>
+                <h5 style="font-size:1.2em;">Great Websites to Learn More...</h5>
+                <ul>
+                    <li class="flat-button"><a href="https://developer.mozilla.org/en-US/" target="blank">MDN Docs</a>
+                    </li><br><br>
+                    <li class="flat-button"><a href="https://eloquentjavascript.net/" target="blank">Eloquent
+                            Javascript</a></li><br><br>
+                    <li class="flat-button"><a href="https://www.w3schools.com/js/" target="blank">W3Schools</a></li>
+                </ul>
+
+
+
+
+            </sidebar>
+
+
+
+        </div>
+
+
+
+    </article>
+    <hr>
+    <article id="arrays" class="row">
+        <div class="column1">
+            <h3>Arrays</h3>
+            <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
+                Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's
+                length can change at any time, and data can be stored at non-contiguous locations in the array,
+                JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use
+                them. In general, these are convenient characteristics; but if these features are not desirable for your
+                particular use, you might consider using typed arrays.
+            </p>
+
+
+        </div>
+        <div class="column2">
+            <img src="img/array-example.png" alt="">
+
+
+        </div>
+
+
+    </article>
+    <hr>
+    <article id="functions" class="row">
+        <div class="column1">
+            <h3>Function Scope</h3>
+
+            <p>Variables defined inside a function cannot be accessed from anywhere outside the function, because the
+                variable is defined only in the scope of the function. However, a function can access all variables and
+                functions defined inside the scope in which it is defined. In other words, a function defined in the
+                global scope can access all variables defined in the global scope. A function defined inside another
+                function can also access all variables defined in its parent function and any other variable to which
+                the parent function has access.</p>
+
+
+        </div>
+        <div class="column2">
+            <img src="img/functions.gif" alt="">
+
+
+        </div>
+
+    </article>
+
+    <hr>
+    <article id="objects" class="row">
+
+        <div class="column1">
+            <h3>Objects</h3>
+            <p>An object is an unordered list of primitive data types (and sometimes reference data types) that is
+                stored as a series of name-value pairs. Each item in the list is called a property (functions are called
+                methods).</p>
+
+
+        </div>
+        <div class="column2">
+            <p>Consider this simple object:
+                <br><br>
+                <pre><code>var myFirstObject = {firstName: "Richard", favoriteAuthor: "Conrad"};</code></pre>
+            </p>
+            <p>Think of an object as a list that contains items, and each item (a property or a method) in the list is
+                stored by a name-value pair. The property names in the example above are firstName and favoriteAuthor.
+                And the values are “Richard” and “Conrad.”
+
+
+                Property names can be a string or a number, but if the property name is a number, it has to be accessed
+                with the bracket notation.</p>
+
+
+        </div>
+
+    </article>
+    <footer>
+        <p>ElevenFifty - Project 2019 </p>
+        <p>  <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fas fa-envelope"></i>
+
+        </p>
+
+    </footer>
+</body>
+
+</html>
