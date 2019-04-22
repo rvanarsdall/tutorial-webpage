@@ -68,7 +68,6 @@ code {
 body {
   margin: 0;
   padding: 0;
-  min-width: 500px;
   font-family: 'Sawarabi Mincho', sans-serif;
 
 }
@@ -171,9 +170,12 @@ h4 {
   position: relative;
 }
 
-.row {
-
-  margin: 25px;
+.container {
+margin:100px
+}
+.row{
+  padding-top: 15px;
+  padding-bottom: 10px
 }
 
 .column1 {
@@ -243,13 +245,13 @@ footer {
 
 @media screen and (max-width: 980px) {
   .column1 {
-    width: 75%;
-    padding: 35px
+    width: 95%;
+    display: block;
   }
 
   .column2 {
-    width: 100%;
-
+    width: 95%;
+    display: block;
   }
 
   img {
@@ -270,7 +272,7 @@ footer {
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
 
 
 
@@ -280,12 +282,12 @@ footer {
 
   nav ul {
     font-size: 1em;
-    padding: 10px;
+    padding: 1px;
   }
 
   header {
     height: 200px;
-    background-size: 600px;
+    background-size: 100%;
     background-attachment: fixed;
     background-repeat: none;
   }
@@ -295,5 +297,22 @@ footer {
   }
 
   h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
+
+  nav {
+    background: black;
+    color: white;
+    padding:0px;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    position: relative;
+  
+  }
+.container{
+  margin:10px
+}
+#brand{
+display:none;
+}
